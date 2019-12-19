@@ -400,10 +400,6 @@ namespace Sprint_2
             }
         }
 
-        private void Cbx_Dreieck_SizeChanged(object sender, SizeChangedEventArgs e)
-        {
-            cbx_Dreieck.Items.Add("Eisen");
-        }
     }
 }
 
