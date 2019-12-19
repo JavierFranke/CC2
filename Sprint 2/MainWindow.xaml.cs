@@ -38,7 +38,7 @@ namespace Sprint_2
                 Application.Current.Shutdown();
             }
         }
-
+        // Grids über treeview sichtbar machen
         private void trv_quadrat_Selected(object sender, RoutedEventArgs e)
         {
             grid_dreieck.Visibility = Visibility.Hidden;
@@ -89,7 +89,7 @@ namespace Sprint_2
             grid_anfangsbild.Visibility = Visibility.Hidden;
         }
 
-        //Rechnung von Rechteck
+        //Berechnung der Körper 
         public void btn_rechnerechteck_Click(object sender, RoutedEventArgs e)
         {
             double hoeherechteck = Convert.ToDouble(txb_hoeherechteck.Text);
@@ -131,6 +131,7 @@ namespace Sprint_2
             txb_ftmiydreieck.Text = Convert.ToString(ftmiydreieck);
 
         }
+        // quadrat
         private void btn_rechnequadrat_Click(object sender, RoutedEventArgs e)
         {
             double Länge = Convert.ToDouble(txb_längequadrat.Text);
@@ -149,6 +150,7 @@ namespace Sprint_2
             txb_ftmizquadrat.Text = Convert.ToString(ftm);
         }
 
+        // kreis
         private void Btn_rechnekreis_Click(object sender, RoutedEventArgs e)
         {
             double durchmesser = Convert.ToDouble(txb_durchmesserkreis.Text);
@@ -168,6 +170,7 @@ namespace Sprint_2
 
         }
 
+        // ring
         private void Btn_rechnekreisring_Click(object sender, RoutedEventArgs e)
         {
 
@@ -194,6 +197,8 @@ namespace Sprint_2
 
             }
         }
+
+        // Löschen der eingegebenen werte
         private void Btn_löschenquadrat_Click(object sender, RoutedEventArgs e)
         {
             txb_ftmiyquadrat.Text = ("");
@@ -255,6 +260,7 @@ namespace Sprint_2
 
 
         }
+        // Fehlermeldung der Textboxe 
         private void txb_hoeherechteck_LostFocus(object sender, RoutedEventArgs e)
         {
             TextBox tb = (TextBox)sender;
@@ -283,7 +289,7 @@ namespace Sprint_2
 
 
 
-
+        // Catiaanbindung der Körper 
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
@@ -367,8 +373,8 @@ namespace Sprint_2
 
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-           
-         }
+          
+        }
 
         private void Btn_catiaring_Click_1(object sender, RoutedEventArgs e)
         {
@@ -392,6 +398,11 @@ namespace Sprint_2
             {
                 MessageBox.Show("Bitte öffnen Sie bitte CATIA.");
             }
+        }
+
+        private void Cbx_Dreieck_SizeChanged(object sender, SizeChangedEventArgs e)
+        {
+            cbx_Dreieck.Items.Add("Eisen");
         }
     }
 }

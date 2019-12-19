@@ -93,7 +93,6 @@
             <TextBox x:Name="txb_ftmizdreieck" HorizontalAlignment="Left" Height="23" Margin="451,293,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
             <TextBox x:Name="txb_ftmiydreieck" HorizontalAlignment="Left" Height="23" Margin="451,324,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120" IsReadOnly="True"/>
             <Button x:Name="btn_catiadreieck" Content="CATIA" HorizontalAlignment="Left" Margin="78,309,0,0" VerticalAlignment="Top" Width="75" Click="Btn_catiadreieck_Click"/>
-            <ComboBox HorizontalAlignment="Left" Margin="78,62,0,0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged"/>
         </Grid>
 
 
@@ -152,7 +151,7 @@
         <Grid x:Name="grid_anfangsbild" HorizontalAlignment="Left" Height="373" Margin="135,15,0,0" VerticalAlignment="Top" Width="642" Visibility="Visible">
             <Image HorizontalAlignment="Left" Height="153" Margin="448,10,0,0" VerticalAlignment="Top" Width="169" Source="JadeHS.PNG"/>
             <Label Content="Ihr Persönlicher &#xD;&#xA;Taschenrechner " HorizontalAlignment="Left" Margin="220,67,0,0" VerticalAlignment="Top" Height="87" Width="138" FontSize="18"/>
-            <Label Content="Bitte wählen Sie einen Körper aus! " HorizontalAlignment="Left" Margin="111,196,0,0" VerticalAlignment="Top" Height="98" Width="403" FontSize="24"/>
+            <Label Content="Bitte wählen Sie einen Körper aus. " HorizontalAlignment="Left" Margin="111,196,0,0" VerticalAlignment="Top" Height="98" Width="403" FontSize="24"/>
         </Grid>
 
 
